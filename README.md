@@ -3,7 +3,7 @@
 EventEase is a sleek, responsive event booking web application inspired by Airbnb’s minimal design language.  
 It allows users to explore, filter, and view events seamlessly with a modern UI and dark mode support.
 
-🔗 **Live Demo:** [EventEase on GitHub Pages](https://arya25program.github.io/EventEase/)
+>🔗 **Live Demo:** [EventEase on GitHub Pages](https://arya25program.github.io/EventEase/)
 
 ---
 
@@ -19,7 +19,7 @@ It allows users to explore, filter, and view events seamlessly with a modern UI 
 
 ## 🗂️ Project Structure
 
-EventEase/
+EventEase
 │
 ├── index.html # Main HTML structure
 ├── style.css # Styling (light + dark mode)
