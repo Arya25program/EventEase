@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EventEase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="brand">
+        <div class="logo">🌆</div>
+        <div>
+          <h1>EventEase</h1>
+          <div class="subtitle">Find and book your next favorite event</div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn" id="toggleDark">🌙 Dark Mode</button>
+        <button class="btn">Host an Event</button>
+      </div>
+    </header>
+
+    <section class="search-bar">
+      <input id="q" placeholder="Search events (music, workshop, etc.)" />
+      <input id="date" type="date" />
+      <select id="location">
+        <option value="">All locations</option>
+        <option>Bangalore</option>
+        <option>Goa</option>
+        <option>Mumbai</option>
+      </select>
+      <button class="btn" id="searchBtn">Search</button>
+    </section>
+
+    <main class="main">
+      <aside class="filters" id="filterBox">
+        <h3>Filters</h3>
+        <label>Ticket Price (₹)</label>
+        <div class="range"><input id="minPrice" type="number" placeholder="min" /><input id="maxPrice" type="number" placeholder="max" /></div>
+        <label>Event Type</label>
+        <select id="type"><option value="any">Any</option><option>Concert</option><option>Workshop</option><option>Festival</option></select>
+        <label>Rating</label>
+        <div class="rating-range">
+          <select id="minRating">
+            <option value="0">Any</option>
+            <option value="1">1 Star ⭐</option>
+            <option value="2">2 Stars ⭐⭐</option>
+            <option value="3">3 Stars ⭐⭐⭐</option>
+            <option value="4">4 Stars ⭐⭐⭐⭐</option>
+            <option value="5">5 Stars ⭐⭐⭐⭐⭐</option>
+          </select>
+        </div>
+        <button class="host-btn btn">Host an Event</button>
+      </aside>
+
+      <section>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <div><strong>Showing <span id="count">0</span> events</strong></div>
+        </div>
+        <div id="grid" class="grid"></div>
+        <div id="noResults" style="text-align:center;color:var(--muted);margin-top:40px;display:none">No events match your filters.</div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
